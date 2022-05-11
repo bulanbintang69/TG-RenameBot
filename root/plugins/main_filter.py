@@ -21,7 +21,7 @@ async def rename_filter(c,m):
   button = []
   try:
     filename = media.file_name
-    text += f"∆ <a href='https://t.me/Anime_Bahasa_Indonesia'>ANIME BAHASA INDONESIA</a>\n➤ {filename}\n∆ <a href='https://sociabuzz.com/firnandaszz/tribe'>SUPPORT ADMIN</a>\n➤ SELAMAT MENONTON..."
+    text += f"➤ {filename}\n"
   except:
     # some files dont gib name ..
     filename = None 
