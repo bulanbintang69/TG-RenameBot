@@ -21,7 +21,7 @@ async def rename_filter(c,m):
   button = []
   try:
     filename = media.file_name
-    text += f"FileName:\n{filename}\n"
+    text += f"∆ <a href='https://t.me/Anime_Bahasa_Indonesia'>ANIME BAHASA INDONESIA</a>\n➤ {filename}\n∆ <a href='https://sociabuzz.com/firnandaszz/tribe'>SUPPORT ADMIN</a>\n➤ SELAMAT MENONTON..."
   except:
     # some files dont gib name ..
     filename = None 
@@ -34,7 +34,6 @@ async def rename_filter(c,m):
     button.append([InlineKeyboardButton("Rename as Video",callback_data="rename_video")])
     button.append([InlineKeyboardButton("Convert as File",callback_data="convert_file")])
     button.append([InlineKeyboardButton("Convert as Video",callback_data="convert_video")])
-  button.append([InlineKeyboardButton("Cancel ❌",callback_data="cancel")])
 
   markup = InlineKeyboardMarkup(button)
   try:
