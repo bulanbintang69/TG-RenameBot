@@ -32,9 +32,7 @@ async def uploader(bot,file, update, msg,as_file=False):
 
     start_time = time.time() 
     afilename = file.split("/")[-1]
-    filename = " ".join(afilename.split(".")[0:-1])
-    if Config.CUSTOM_CAPTION:
-         filename = "∆ <a href='https://t.me/Anime_Bahasa_Indonesia'>ANIME BAHASA INDONESIA</a>\n" + filename + "\n" + "∆ <a href='https://sociabuzz.com/firnandaszz/tribe'>SUPPORT ADMIN</a>\n➤ SELAMAT MENONTON..."
+    filename = "●▬▬▬❝<a href='https://t.me/Anime_Bahasa_Indonesia'>𝖆𝖓𝖎𝖒𝖊 𝖇𝖆𝖍𝖆𝖘𝖆 𝖎𝖓𝖉𝖔</a>❞▬▬▬●\n»ɴᴀᴍᴀ ꜰɪʟᴇ :\n" + filename + "\n» ᴅᴜᴋᴜɴɢ ᴍɪᴍɪɴ : <a href='https://sociabuzz.com/firnandaszz/tribe'>ᴋʟɪᴋ ᴅɪꜱɪɴɪ</a>\n●▬▬▬ ❝𝖘𝖊𝖑𝖆𝖒𝖆𝖙 𝖒𝖊𝖓𝖔𝖓𝖙𝖔𝖓❞▬▬▬●"
     # Thumb Location parameter 
     thumb_location = Config.DOWNLOAD_LOCATION + "/thumb/" + str(update.chat.id) + ".jpg" 
     thumb_image_path = None
